@@ -200,7 +200,7 @@ class Crawler
             $media['taken_at_timestamp'],
             $user,
             $media['edge_media_preview_like']['count'],
-            $media['edge_media_to_comment']['count'],
+            $media['edge_media_to_parent_comment']['count'],
             $media['is_ad'],
             $media['edge_media_to_caption']['edges'][0]['node']['text'] ?? null,
             $location
@@ -215,7 +215,7 @@ class Crawler
          $media['taken_at_timestamp'],
          $user,
          $media['edge_media_preview_like']['count'],
-         $media['edge_media_to_comment']['count'],
+         $media['edge_media_to_parent_comment']['count'],
          $media['is_ad'],
          $media['edge_media_to_caption']['edges'][0]['node']['text'] ?? null,
          $location
